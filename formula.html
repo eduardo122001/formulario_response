@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO</title>
+    
+
+    <style>
+        
+
+        body{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .grid-container {
+        display: grid;
+            grid-template-rows: 25px 100px 100px 170px 180px 250px 300px;
+            grid-template-columns: 1fr 1fr 1fr 1fr ;
+            grid-gap: 0px;
+            border: black 2px solid;
+            grid-template-areas: 
+            "an an an an"
+            "b b c c"
+            "d d e e"
+            "f f g g"
+            "h h i i"
+            "j j k k"
+            "z z l l"
+            
+        }
+        .grid-a {
+         background: rgb(3, 61, 44);  
+         text-align: center ; 
+         grid-area: an;
+         -webkit-text-fill-color: white;
+        }
+
+        .grid-b {
+         background:white;  
+         text-align: center ; 
+         grid-area: b;
+        }
+        .grid-c {
+         background:rgb(235, 235, 235);  
+         text-align: center ; 
+         grid-area: c;
+        }
+
+        .grid-d {
+         background:rgb(235, 235, 235);  
+         text-align: center ; 
+         grid-area: d;
+        }
+        .grid-e {
+         background:white;  
+         text-align: center ; 
+         grid-area: e;
+        }
+        .grid-f {
+         background:white;  
+         text-align: center ; 
+         grid-area: f;
+        }
+        .grid-g {
+         background:rgb(235, 235, 235);  
+         text-align: center ; 
+         grid-area: g;
+        }
+        .grid-h {
+         background:rgb(235, 235, 235);  
+         text-align: center ; 
+         grid-area: h;
+        }
+        .grid-i {
+         background:white;  
+         text-align: center ; 
+         grid-area: i;
+        }
+        .grid-j {
+         background:white;  
+         text-align: center ; 
+         grid-area: j;
+        }
+        
+        .grid-k {
+         background:rgb(235, 235, 235);  
+         text-align: center ; 
+         grid-area: k;
+        }
+        .grid-l {
+         background:rgb(51, 51, 51);  
+         display: flex;
+         text-align: center ;
+         justify-content: center;
+         align-items: center;
+         grid-area: l;
+        }
+        .grid-z {
+         background:rgb(51, 51, 51);  
+         display: flex;
+         text-align: center ;
+         justify-content: center;
+         align-items: center;
+         grid-area: z;
+        }
+</style>
+</head>
+<body>
+    <form action="curriculum.html">
+    <div class="grid-container">
+         <div class="grid-a">LLENE EL FORMULARIO</div>
+        <div class="grid-b">
+            <h3>Nombre y Apellidos</h3>
+            <label for="nombre">:</label>
+            <input type="text" id="nombre" name="nombre">
+         
+        </div>
+        <div class="grid-c">
+            <h3>Fecha de Nacimiento</h3>
+            <label for="nacimiento">:</label>
+            <input type="date" id="nacimiento" name="nacimiento">
+          
+        </div>
+        <div class="grid-d">
+            <h3>Ocupación</h3>
+            <label for="ocupacion">:</label>
+            <input type="text" id="ocupacion" name="ocupacion">
+           
+        </div>
+        <div class="grid-e">
+            <h3>Contacto </h3>
+            <label for="contacto">:</label>
+            <input type="text" placeholder="telefono o e-mail" id="contacto" name="contacto">
+          
+        </div>
+        <div class="grid-f">
+            <h3>Nacionalidad </h3>
+            <label for="nacionalidad">:</label>
+            <select id="nacionalidad" name="nacionalidad">
+                <option value="Peru">Peru</option>
+                <option value="Brazil">Brazil</option>
+                <option value="Chile">Chile</option>
+                <option value="Ecuador">Ecuador</option>
+            </select>
+          
+        </div>
+        <div class="grid-g">
+            <h3>Nivel de ingles</h3>
+            <input type="radio" id="basico" name="nivel" value="basico">
+             <label for="basico">basico</label><br>
+             <input type="radio" id="intermedio" name="nivel" value="intermedio">
+             <label for="intermedio">intermedio</label><br>
+             <input type="radio" id="avanzado" name="nivel" value="avanzado">
+             <label for="avanzado">avanzado</label><br>
+            <input type="radio" id="fluido " name="nivel" value="fluido">
+             <label for="fluido ">fluido </label><br>
+           
+            
+        </div>
+        <div class="grid-h">
+            <h3>Lenguajes de programación</h3>
+            <input type="checkbox" id="C++" name="lenguaje" value="c++" >
+            <label for="C++">C++</label><br>
+            <input type="checkbox" id="Python" name="lenguaje" value="python">
+            <label for="Python"> Python</label><br>
+            <input type="checkbox" id="HTML" name="lenguaje" value="HTML">
+            <label for="HTML">HTML</label><br><br>
+        </div>
+        <div class="grid-i">
+            <h3>Aptitudes </h3>
+            <input list="aptitudes" name="aptitudes">
+            <datalist id="aptitudes">
+                <option value="lider">
+                <option value="soporte">
+                <option value="creador">
+                <option value="innovador">
+                <option value="analizador">
+            </datalist>
+            
+        </div>
+        <div class="grid-j">
+            <h3>Habilidades </h3>
+            <input type="checkbox" id="calculo" name="habilidad" value="calculo">
+            <label for="calculo">calculo</label><br>
+            <input type="checkbox" id="razonamiento" name="habilidad" value="razonamiento" >
+            <label for="razonamiento"> razonamiento</label><br>
+            <input type="checkbox" id="tester" name="habilidad" value="tester" >
+            <label for="tester">tester</label><br><br>
+           
+        </div>
+        <div class="grid-k">
+            <h3>EXPERIENCIA LABORAL:  </h3>
+            <textarea id="perfil" name="perfil" rows="10" cols="30"></textarea>
+            <br><br>
+            
+        </div>
+        <div class="grid-z">
+            <h3>FORMACION: </h3>
+            <textarea id="formacion" name="formacion" rows="10" cols="30"></textarea>
+            <br><br>
+            
+        </div>
+        <div class="grid-l">
+            <button type="submit" onclick="guardarDatos();">Enviar</button>
+        </div>
+    </form>
+
+
+    <script>
+        function enviarFormulario(event) {
+          event.preventDefault(); 
+  
+          var nombre = document.getElementById("nombre").value;
+          var ocupacion = document.getElementById("ocupacion").value;
+          var contacto = document.getElementById("contacto").value;
+          var perfil = document.getElementById("perfil").value;
+
+          var opciones = document.getElementsByName("nivel");
+            var opcionSeleccionada;
+
+         /*   for (var i = 0; i < opciones.length; i++) {
+            if (opciones[i].checked) {
+                opcionSeleccionada = opciones[i].value;
+                break;
+            }
+            }*/
+
+
+          var parametros = "?nombre=" + encodeURIComponent(nombre) +
+                           "&ocupacion=" + encodeURIComponent(ocupacion) +
+                           "&contacto=" + encodeURIComponent(contacto)+
+                           "&perfil="+ encodeURIComponent(perfil)+
+                           "&opcion="+ encodeURIComponent(opcionSeleccionada);
+
+
+          window.location.href = "nuevo.html" + parametros;
+
+        }
+      </script>
+
+    
+
+
+
+
+
+
+</body>
+</html>
